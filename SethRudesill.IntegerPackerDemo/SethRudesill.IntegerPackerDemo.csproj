@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <Authors>Seth Rudesill</Authors>
+    <Company>Seth Rudesill</Company>
+    <Description>Demonstrates stuffing two 16-bit integers into one 32-bit integer.</Description>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+</Project>
