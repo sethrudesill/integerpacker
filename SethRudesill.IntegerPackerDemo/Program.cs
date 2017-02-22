@@ -35,7 +35,11 @@ namespace SethRudesill.IntegerPackerDemo
                     {
                         Console.WriteLine();
                         Result = (UInt32) Left << 16 | Right;
-                        Console.WriteLine("The result is {0}", Result);
+                        var resultLeft = Result >> 16;
+                        var resultRight = Result & ((1 << 16) - 1);
+
+                        Console.WriteLine("The result is {0} ({1} | {2})", Result, resultLeft, resultRight);
+                        
                         Console.Write(Prompt3);
                         if (Console.ReadKey().Key.Equals(ConsoleKey.Y) == false)
                             break;
